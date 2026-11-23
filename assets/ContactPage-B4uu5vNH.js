@@ -1,0 +1,1 @@
+import{j as t}from"./index-hM7nReCM.js";import{C as o}from"./Contact-3zIu57oL.js";import{u as r}from"./Seo-BuGB5a-T.js";import"./router-DQXviwkw.js";function s(){return r({title:"Contact",description:"Get in touch about roles, collaborations, or research enquiries.",path:"/contact"}),t.jsx("main",{id:"main-content",tabIndex:-1,children:t.jsx(o,{})})}export{s as default};

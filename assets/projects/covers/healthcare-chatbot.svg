@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Healthcare Chatbot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#39d353"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1440" height="740" rx="28" fill="#21262d" stroke="#30363d"/>
+  <text x="140" y="200" fill="#8b949e" font-family="Inter, Segoe UI, sans-serif" font-size="28" font-weight="700" letter-spacing="4">PERSONAL · 2024</text>
+  <text x="140" y="320" fill="#f0f6fc" font-family="Inter, Segoe UI, sans-serif" font-size="72" font-weight="800">Healthcare Chatbot</text>
+  <text x="140" y="400" fill="#8b949e" font-family="Inter, Segoe UI, sans-serif" font-size="32">Conversational assistant for common health questions</text>
+  <rect x="140" y="500" width="240" height="90" rx="16" fill="url(#g)"/>
+  <text x="260" y="558" text-anchor="middle" fill="#0d1117" font-family="Inter, Segoe UI, sans-serif" font-size="26" font-weight="700">NLP · Demo</text>
+</svg>

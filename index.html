@@ -1,553 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Md. Hasibur Rahman | AI/ML Engineer & Researcher</title>
-    <meta name="title" content="Md. Hasibur Rahman | AI/ML Engineer & Researcher">
-    <meta name="description" content="Official portfolio of Md. Hasibur Rahman, a Jr. AI/ML Engineer and Researcher. Specializing in Machine Learning, Computer Vision, and Data Science.">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title>Md. Hasibur Rahman | AI/ML Engineer</title>
+    <meta
+      name="description"
+      content="AI/ML Engineer specializing in computer vision, OCR, face recognition, Edge AI, AI automation / VLM, data analytics, and web scraping, with peer-reviewed research in healthcare IoT and phishing detection."
+    />
+    <meta name="author" content="Md. Hasibur Rahman" />
     <link rel="canonical" href="https://hasibur013.github.io/" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hasibur013.github.io/">
-    <meta property="og:title" content="Md. Hasibur Rahman | AI/ML Engineer & Researcher">
-    <meta property="og:description" content="Specializing in Deep Learning, Computer Vision, and OCR. Check out my latest AI/ML research and projects.">
-    <meta property="og:image" content="https://hasibur013.github.io/assets/images/portfolio-preview.jpg"> <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://hasibur013.github.io/">
-    <meta property="twitter:title" content="Md. Hasibur Rahman | AI/ML Engineer & Researcher">
-    <meta property="twitter:description" content="Specializing in Deep Learning, Computer Vision, and OCR.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#0d1117" />
+    <meta name="color-scheme" content="dark light" />
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme");
+          if (theme !== "light" && theme !== "dark") {
+            theme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+          }
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", theme === "light" ? "#f6f5fb" : "#0d1117");
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Dark Mode Toggle -->
-    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-    </button>
+    <meta property="og:site_name" content="Md. Hasibur Rahman" />
+    <meta property="og:title" content="Md. Hasibur Rahman | AI/ML Engineer" />
+    <meta
+      property="og:description"
+      content="Computer vision, OCR, face recognition, Edge AI, automation, data analytics, and web scraping from annotation through deployment."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Hasibur Rahman</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Md. Hasibur Rahman | AI/ML Engineer" />
+    <meta name="twitter:description" content="Computer vision, OCR, FRS, Edge AI, automation, analytics, and web scraping." />
+    <meta name="twitter:image" content="/assets/og-cover.png" />
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Md. Hasibur Rahman</h1>
-            <div class="hero-subtitle">
-                <span class="typing-text"></span>
-            </div>
-            <p class="hero-description">Dedicated Machine Learning Engineer with expertise in deep learning, data annotation, and model optimization. Passionate about leveraging cutting-edge ML techniques to solve complex problems.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="assets/Hasibur_Resume.pdf" download class="btn btn-secondary">
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/md-hasibur-rahman-2286321b9/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/hasibur013" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.kaggle.com/hasibur013" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
-                <a href="https://scholar.google.com/citations?user=PyEMtfkAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://www.researchgate.net/profile/Md-Rahman-1528" target="_blank" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a dedicated <strong>Jr. Machine Learning Engineer</strong> and <strong>Researcher</strong> with extensive hands-on experience in AI-driven solutions. My expertise spans deep learning, data annotation, and model optimization.</p>
-                    <p>Currently working at <strong>Bondstein Technologies Limited</strong> as a Jr. ML Engineer in the R&D Department, where I focus on ANPR (Automatic Number Plate Recognition), OCR technologies, Object Detection, and Facial Recognition systems.</p>
-                    <p>I hold a <strong>BSc in Computer Science & Engineering</strong> from Green University of Bangladesh with an impressive CGPA of <strong>3.95/4.0</strong>.</p>
-
-                    <div class="highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-award"></i>
-                            <div>
-                                <h3>8x VC Awards</h3>
-                                <p>Academic Excellence</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-trophy"></i>
-                            <div>
-                                <h3>Best Project Award</h3>
-                                <p>Design Project Presentation</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fab fa-kaggle"></i>
-                            <div>
-                                <h3>Kaggle Expert</h3>
-                                <p>Datasets & Notebooks</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-section">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4><i class="fas fa-brain"></i> AI & ML</h4>
-                            <ul>
-                                <li>Deep Learning</li>
-                                <li>Computer Vision</li>
-                                <li>Image Processing</li>
-                                <li>LLM & NLP</li>
-                                <li>PyTorch & TensorFlow</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4><i class="fas fa-code"></i> Programming</h4>
-                            <ul>
-                                <li>Python</li>
-                                <li>FastAPI</li>
-                                <li>Django</li>
-                                <li>MySQL & SQLite</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4><i class="fas fa-chart-line"></i> Data Analysis</h4>
-                            <ul>
-                                <li>Power BI</li>
-                                <li>Pandas & NumPy</li>
-                                <li>Seaborn & Matplotlib</li>
-                                <li>Data Visualization</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">September 2025 - Present</span>
-                        <h3>Jr. ML Engineer (R&D Department)</h3>
-                        <h4>Bondstein Technologies Limited, Tejgaon</h4>
-                        <ul>
-                            <li>Developing ANPR (Automatic Number Plate Recognition) systems using PaddleOCR</li>
-                            <li>Implementing Object Detection and Facial Recognition solutions</li>
-                            <li>Conducting R&D on cutting-edge ML technologies</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">May 2025 - August 2025</span>
-                        <h3>Data Annotator (R&D Department)</h3>
-                        <h4>Bondstein Technologies Limited, Tejgaon</h4>
-                        <ul>
-                            <li>Performed high-quality data annotation using Roboflow</li>
-                            <li>Fine-tuned PaddleOCR for improved accuracy</li>
-                            <li>Contributed to dataset preparation for ML models</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">February 2025 - May 2025</span>
-                        <h3>AI Engineer Intern (Remote)</h3>
-                        <h4>ROHUM, Turkey</h4>
-                        <ul>
-                            <li>Developed AI agents and worked with Large Language Models</li>
-                            <li>Built Crypto Bot with FastAPI integration</li>
-                            <li>Deployed applications on Azure Virtual Machines</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">February 2025 - May 2025</span>
-                        <h3>Machine Learning Intern (R&D)</h3>
-                        <h4>Bondstein Technologies Limited</h4>
-                        <ul>
-                            <li>Specialized in data annotation using Roboflow</li>
-                            <li>R&D on PaddleOCR fine-tuning for Bangla language support</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-image"></i></div>
-                    <h3>CIFAR-10 Image Classification</h3>
-                    <p>Advanced image classification using PyTorch & MLflow with Gradio interface. Achieved 85% accuracy using pretrained ResNet-18.</p>
-                    <div class="project-tech">
-                        <span>PyTorch</span>
-                        <span>MLflow</span>
-                        <span>Gradio</span>
-                        <span>ResNet-18</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fas fa-play"></i> Demo</a>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <div class="badge">Best Project Award</div>
-                    <div class="project-icon"><i class="fas fa-hospital"></i></div>
-                    <h3>Online Medical Sheba</h3>
-                    <p>AI-powered healthcare platform with chatbot for symptom analysis, doctor appointments, hospital finder, and online medicine store.</p>
-                    <div class="project-tech">
-                        <span>Django</span>
-                        <span>Gemini API</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fas fa-play"></i> Demo</a>
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Healthcare Chatbot</h3>
-                    <p>Intelligent chatbot for hospital and doctor information retrieval using GAI and BERT model for natural language understanding.</p>
-                    <div class="project-tech">
-                        <span>Django</span>
-                        <span>PyTorch</span>
-                        <span>BERT</span>
-                        <span>Gemini API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fas fa-play"></i> Demo</a>
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fas fa-file-pdf"></i> Report</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
-                    <h3>Coffee Shop Sales Dashboard</h3>
-                    <p>Comprehensive data analysis and interactive dashboard using Python and Power BI for business insights.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Power BI</span>
-                        <span>Pandas</span>
-                        <span>Seaborn</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="https://github.com/hasibur013" class="project-link" target="_blank"><i class="fas fa-file-pdf"></i> Dashboard</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications & Courses</h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3>Deep Learning with Computer Vision</h3>
-                    <p class="cert-issuer">Innovative Skills BD</p>
-                    <p class="cert-date">February 2025 - Ongoing</p>
-                    <a href="#" class="cert-link">View Certificate</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-python"></i></div>
-                    <h3>Python with Django</h3>
-                    <p class="cert-issuer">EDGE Project, Green University</p>
-                    <p class="cert-date">September 2024 - February 2025</p>
-                    <a href="#" class="cert-link">View Certificate</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Machine Learning Bootcamp</h3>
-                    <p class="cert-issuer">bongoDev</p>
-                    <p class="cert-date">August 2024 - January 2025</p>
-                    <a href="#" class="cert-link">View Certificate</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Machine Learning A-Z: AI, Python</h3>
-                    <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">January 2024 - August 2024</p>
-                    <a href="#" class="cert-link">View Certificate</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-kaggle"></i></div>
-                    <h3>Intro to ML & Intermediate ML</h3>
-                    <p class="cert-issuer">Kaggle</p>
-                    <p class="cert-date">April 2024 - May 2024</p>
-                    <a href="https://www.kaggle.com/hasibur013" class="cert-link" target="_blank">View on Kaggle</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-award"></i></div>
-                    <h3>Campus Ambassador</h3>
-                    <p class="cert-issuer">bongoDev</p>
-                    <p class="cert-date">August 2024 - Ongoing</p>
-                    <a href="#" class="cert-link">View Certificate</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2 class="section-title">Research Publications</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-icon"><i class="fas fa-file-alt"></i></div>
-                    <div class="publication-content">
-                        <h3>Priority-Aware Task Offloading for Latency and Energy Minimization in Healthcare IoT Systems</h3>
-                        <p class="publication-venue">IEEE SMC 2025, Austria</p>
-                        <p class="publication-date">December 2025</p>
-                        <div class="publication-links">
-                            <a href="https://scholar.google.com/citations?user=PyEMtfkAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                            <a href="https://www.researchgate.net/profile/Md-Rahman-1528" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-icon"><i class="fas fa-file-alt"></i></div>
-                    <div class="publication-content">
-                        <h3>PhishGuard: A Multi-Layered Ensemble Model for Optimal Phishing Website Detection</h3>
-                        <p class="publication-venue">6th International Conference on STI 2024, Dhaka</p>
-                        <p class="publication-date">December 2024</p>
-                        <div class="publication-links">
-                            <a href="https://scholar.google.com/citations?user=PyEMtfkAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                            <a href="https://www.researchgate.net/profile/Md-Rahman-1528" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Testimonials</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
-                    <p class="testimonial-text">"Hasibur is an exceptional ML engineer with deep understanding of computer vision and OCR technologies. His dedication to R&D and problem-solving skills make him a valuable asset to our team."</p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Dr. Md. Ahsan Habib</h4>
-                            <p>Chairperson, Dept. of CSE, Green University of Bangladesh</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
-                    <p class="testimonial-text">"Working with Hasibur on the ANPR project was impressive. His technical expertise in PaddleOCR and ability to optimize models for production environments is outstanding."</p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Salman Md Sultan</h4>
-                            <p>Founder & CEO, Innovative Skills LTD</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
-                    <p class="testimonial-text">"Hasibur demonstrates excellent research capabilities and attention to detail. His work on healthcare IoT systems shows both theoretical knowledge and practical implementation skills."</p>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Research Supervisor</h4>
-                            <p>IEEE SMC 2025 Conference</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2 class="section-title">Latest Blog Posts</h2>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <div class="blog-category">Machine Learning</div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-date"><i class="far fa-calendar"></i> January 15, 2026</span>
-                        <h3>Getting Started with ANPR: A Practical Guide</h3>
-                        <p>Explore how Automatic Number Plate Recognition works and how to implement it using PaddleOCR and deep learning techniques...</p>
-                        <a href="blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <div class="blog-category">Deep Learning</div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-date"><i class="far fa-calendar"></i> January 10, 2026</span>
-                        <h3>Fine-tuning PaddleOCR for Bangla Language</h3>
-                        <p>Learn the challenges and solutions in adapting OCR models for Bangla language recognition and text extraction...</p>
-                        <a href="blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <div class="blog-category">Research</div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-date"><i class="far fa-calendar"></i> January 5, 2026</span>
-                        <h3>Healthcare IoT: Task Offloading Strategies</h3>
-                        <p>Insights from our IEEE SMC 2025 paper on optimizing latency and energy consumption in healthcare IoT systems...</p>
-                        <a href="blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <div class="blog-category">Computer Vision</div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-date"><i class="far fa-calendar"></i> December 28, 2025</span>
-                        <h3>Building Robust Facial Recognition Systems</h3>
-                        <p>Best practices for implementing facial recognition with high accuracy and addressing privacy concerns...</p>
-                        <a href="blog.html" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-cta">
-                <a href="blog.html" class="btn btn-primary">View All Posts</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <a href="mailto:hasibur01631753881@gmail.com">hasibur01631753881@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <a href="tel:+8801610768178">+880 1610-768178</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Gazipur, Dhaka, Bangladesh</p>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://www.linkedin.com/in/md-hasibur-rahman-2286321b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/hasibur013" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.kaggle.com/hasibur013" target="_blank"><i class="fab fa-kaggle"></i></a>
-                        <a href="https://scholar.google.com/citations?user=PyEMtfkAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form name="contact" method="POST" action="thank-you.html" data-netlify="true" data-netlify-honeypot="bot-field" id="contactForm">
-                        <!-- Hidden field for Netlify -->
-                        <input type="hidden" name="form-name" value="contact" />
-                        <!-- Honeypot field -->
-                        <p style="display: none;">
-                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
-
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Md. Hasibur Rahman. All rights reserved.</p>
-            <p>Jr. AI/ML Engineer | Researcher | Data Annotator</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="blog.html">Blog</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+    <script type="module" crossorigin src="/assets/index-hM7nReCM.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/router-DQXviwkw.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CSNmUa3G.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding: 2rem; font-family: system-ui, sans-serif; color: #f0f6fc; background: #0d1117">
+        This portfolio needs JavaScript enabled. You can also reach me at
+        <a href="mailto:mlengr.hasibur@gmail.com" style="color: #58a6ff">mlengr.hasibur@gmail.com</a>.
+      </p>
+    </noscript>
+  </body>
 </html>

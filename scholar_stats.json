@@ -1,0 +1,15 @@
+{
+  "citations": 30,
+  "citations_since_2021": 30,
+  "h_index": 1,
+  "h_index_since_2021": 1,
+  "i10_index": 1,
+  "i10_index_since_2021": 1,
+  "cites_per_year": {
+    "2025": 16,
+    "2026": 14
+  },
+  "updated": "2026-11-22",
+  "source": "serpapi+google_scholar_author",
+  "scholar_id": "PyEMtfkAAAAJ"
+}
